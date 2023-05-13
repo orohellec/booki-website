@@ -4,12 +4,21 @@
   font-family: 'Raleway', sans-serif;
 }
 
+/* Remove default input search style */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 :root {
   --main-color: #0065FC;
   --main-bg-color: #F2F2F2;
   --filter-bg-color: #DEEBFF;
 }
 
+/* change default color of font icon elements */
 .fa-solid {
   color: var(--main-color);
 }
@@ -19,6 +28,8 @@ body {
   justify-content: center;
   margin: 0px;
 }
+
+/* Navbar css*/
 
 .nav {
   display: flex;
@@ -49,6 +60,53 @@ body {
   color: var(--main-color);
   cursor: pointer;
   border-top: solid 2px;
+}
+
+/* info group section */
+
+.info-group__main-title {
+  font-size: 22px;
+}
+
+.info-group__form {
+  display: flex;
+  align-items: center;
+  width: 377px;
+  height: 49px;
+  border: 1px solid var(--main-bg-color);
+  gap: 24px;
+}
+
+.info-group__location-dot__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background-color: var(--main-bg-color);
+  height: 100%;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.info-group__location-dot {
+  color: black;
+}
+
+.info-group__search {
+  border: none;
+}
+
+.info-group__search:focus {
+  outline: none;
+}
+
+.info-group__submit {
+  display: inline-block;
+  height: 100%;
+  width: 132px;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  background-color: var(--main-color);
+  color: white;
 }
 
 .main-container {
