@@ -29,6 +29,11 @@ body {
   margin: 0px;
 }
 
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
 /* Navbar css*/
 
 .nav {
@@ -87,7 +92,7 @@ body {
   gap: 24px;
 }
 
-.info-group__location-dot__wrapper {
+.info-group__location-dot-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,11 +169,6 @@ body {
   padding: 0 50px;
 }
 
-.section-title {
-  margin: 0;
-  font-size: 22px;
-}
-
 .card {
   background-color: white;
   border-radius: 20px;
@@ -198,7 +198,8 @@ body {
   justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements,
+.populaires {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
@@ -210,30 +211,60 @@ body {
   width: 65%;
 }
 
+.hebergements__title {
+  margin: 0;
+}
+
+.hebergements__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hebergements__cards .card-content {
+  padding: 0 15px;
+}
+
+.hebergements__cards .card {
+  display: flex;
+  margin-top: 33px;
+  flex-direction: column;
+  width: 250.33px;
+}
+
+.hebergements__cards img {
+  border-radius: 20px 20px 0 0;
+}
+
+
 /****** Populaires ***********/
 .populaires {
   width: 32%;
 }
 
-.populaires-title {
+.populaires__title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.populaires-cards .card {
+.populaires__title {
+  margin: 0;
+}
+
+.populaires__cards .card {
   display: flex;
   margin-top: 33px;
 }
 
-.populaires-cards img {
+.populaires__cards img {
   width: 33%;
   height: 136px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populaires__cards .card-content {
   width: 67%;
   padding-left: 15px;
   display: flex;
@@ -242,16 +273,16 @@ body {
   box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires__cards .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires__cards .card-subtitle {
   margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaires__cards .card-rating {
   margin-bottom: 5px;
 }
 
@@ -273,21 +304,21 @@ body {
     margin-top: 50px;
   }
 
-  .populaires-cards {
+  .populaires__cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .populaires-cards .card {
+  .populaires__cards .card {
     width: 30%;
   }
 
-  .populaires-cards .card-title {
+  .populaires__cards .card-title {
     font-size: 14px;
   }
 
-  .populaires-cards .card-subtitle {
+  .populaires__cards .card-subtitle {
     font-size: 13px;
   }
 }
