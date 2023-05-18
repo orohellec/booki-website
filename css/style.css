@@ -34,6 +34,14 @@ h2 {
   font-weight: 700;
 }
 
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 /* Navbar css*/
 
 .nav {
@@ -209,6 +217,9 @@ h2 {
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .hebergements__title {
@@ -218,7 +229,7 @@ h2 {
 .hebergements__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .hebergements__cards .card-content {
@@ -227,13 +238,31 @@ h2 {
 
 .hebergements__cards .card {
   display: flex;
-  margin-top: 33px;
   flex-direction: column;
   width: 250.33px;
+  gap: 4px;
+  padding: 0 0 15px;
+}
+
+.hebergements__cards .card-title {
+  margin-top: 0;
+}
+
+.hebergements__cards .card-subtitle {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .hebergements__cards img {
+  border: 5px solid #FFFFFF;
   border-radius: 20px 20px 0 0;
+  height: 124px;
+}
+
+.hebergements__see-more-button {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
 }
 
 
