@@ -201,8 +201,8 @@ button {
   font-weight: 700;
 }
 
-.neutralStar {
-  color: var(--main-bg-color)
+.neutral-star {
+  color: var(--main-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
