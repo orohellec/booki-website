@@ -204,6 +204,7 @@ button {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .hebergements,
@@ -315,6 +316,42 @@ button {
   margin-bottom: 5px;
 }
 
+/****** Activities ***********/
+
+.activities {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.activities__main-title {
+  margin: 0;
+}
+
+.activities__cards {
+  display: flex;
+  gap: 30px;
+}
+
+.activities__card {
+  width: 297.5px;
+  height: 439px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activities__img {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 380px;
+}
+
+.activities__img-title {
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -349,6 +386,10 @@ button {
 
   .populaires__cards .card-subtitle {
     font-size: 13px;
+  }
+
+  .activities__cards {
+    flex-wrap: wrap;
   }
 }
 
