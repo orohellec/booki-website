@@ -462,4 +462,12 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+  footer {
+    flex-wrap: wrap;
+  }
+
+  .footer__section {
+    flex-grow: 0;
+  }
+}
