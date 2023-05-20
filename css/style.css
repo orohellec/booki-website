@@ -149,7 +149,8 @@ main {
   font-family: 'Raleway';
   font-size: 18px;
   font-weight: 700;
-  padding: 15px 16px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .info-group__submit:hover {
