@@ -16,6 +16,7 @@ input[type="search"]::-webkit-search-results-decoration {
   --main-color: #0065FC;
   --main-bg-color: #F2F2F2;
   --filter-bg-color: #DEEBFF;
+  --button-border: #D9D9D9;
 }
 
 /* change default color of font icon elements */
@@ -26,12 +27,6 @@ input[type="search"]::-webkit-search-results-decoration {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
 }
 
 h2 {
@@ -45,6 +40,18 @@ button {
   border: 0;
   padding: 0;
   cursor: pointer;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
 /* Navbar css*/
@@ -97,12 +104,12 @@ button {
 }
 
 .info-group__form {
+  margin-right: auto;
   display: flex;
   align-items: center;
-  width: 377px;
   height: 49px;
   border: 1px solid var(--main-bg-color);
-  gap: 24px;
+  border-radius: 15px;
 }
 
 .info-group__location-dot-wrapper {
@@ -111,7 +118,7 @@ button {
   justify-content: center;
   width: 50px;
   background-color: var(--main-bg-color);
-  height: 49px;
+  height: 100%;
   border-radius: 15px 0px 0px 15px;
 }
 
@@ -120,7 +127,12 @@ button {
 }
 
 .info-group__search {
+  display: inline-block;
   border: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 24px;
+  width: 195px;
 }
 
 .info-group__search:focus {
@@ -130,7 +142,6 @@ button {
 .info-group__submit {
   display: inline-block;
   height: 100%;
-  width: 132px;
   border: none;
   border-radius: 0px 15px 15px 0px;
   background-color: var(--main-color);
@@ -138,6 +149,7 @@ button {
   font-family: 'Raleway';
   font-size: 18px;
   font-weight: 700;
+  padding: 15px 16px;
 }
 
 .info-group__submit:hover {
@@ -157,6 +169,7 @@ button {
 
 .info-group__button {
   height: 50px;
+  border: 2px solid var(--button-border);
   border-radius: 25px;
   padding: 4px 19px;
   font-size: 17px;
@@ -165,15 +178,36 @@ button {
 
 .info-group__button:hover {
   cursor: pointer;
+  background-color: var(--filter-bg-color);
 }
 
 .info-group__info {
-  margin-bottom: 37.5px;
+  display: flex;
+  align-items: center;
 }
 
 .info-group__icon {
   margin-right: 10px;
   color: var(--main-color);
+}
+
+.info-group__info-icon-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--button-border);
+  border-radius: 50%;
+}
+
+.info-group__info-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-group__info-text {
+  margin-left: 10px;
 }
 
 .main-container {
@@ -209,7 +243,6 @@ button {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
 }
 
 .hebergements,
@@ -328,6 +361,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 30px;
 }
 
 .activities__main-title {
