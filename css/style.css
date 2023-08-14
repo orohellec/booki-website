@@ -159,6 +159,7 @@ main {
 
 .info-group__filters {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 15px;
 }
@@ -463,6 +464,14 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .populaires__cards {
+    flex-direction: column;
+  }
+
+  .populaires__cards .card {
+    width: 100%;
+  }
+
   footer {
     flex-wrap: wrap;
   }
