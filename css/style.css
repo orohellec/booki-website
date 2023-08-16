@@ -176,6 +176,7 @@ main {
   padding: 4px 19px;
   font-size: 17px;
   font-weight: 700;
+  background-color: unset;
 }
 
 .info-group__button:hover {
@@ -268,8 +269,8 @@ main {
 }
 
 .hebergements__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
@@ -280,7 +281,6 @@ main {
 .hebergements__cards .card {
   display: flex;
   flex-direction: column;
-  width: 250.33px;
   gap: 4px;
   padding: 0 0 15px;
 }
